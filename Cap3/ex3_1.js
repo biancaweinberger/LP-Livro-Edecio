@@ -18,11 +18,14 @@ function mostrarMedia(){
         // altera o texto e estilo da cor do elemento outSituacao
     outSituacao.textContent = 'Parabéns ' + nome + '! Você foi aprovado(a).';
     outSituacao.style.color = 'blue'; 
-    } else{
-        outSituacao = 'Ops '+ nome + '... Você foi reprovado(a).';
+    } else if (media >= 4){ 
+        outSituacao.textContent = 'Atenção ' + nome + '. Você está em exame.';
+    outSituacao.style.color = 'red'; 
+    }else {
+        outSituacao.textContent = 'Ops '+ nome + '... Você foi reprovado(a).';
         outSituacao.style.color = 'red';
     }
-} 
+}
 // cria uma referência ao elemento btResultado (botão)
 var btResultado = document.getElementById('btResultado');
 // registra um evento associado ao botão, para carregar uma função
