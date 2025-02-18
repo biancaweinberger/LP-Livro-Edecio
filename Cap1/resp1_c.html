@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+// Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cliente.
+//Valor da conta: 90.00/número de clientes: 3/valor por cliente: 30.00
+var total = Number(window.prompt('Valor da conta R$: '));
+var pessoas =  Number(window.prompt('Quantas pessoas vão pagar essa conta R$: '));
+var cliente = total/pessoas;
+if (pessoas > 1){
+    window.alert(`O valor de R$ ${total.toFixed(2)} a ser pago por R$ ${pessoas} pessoas é de: \nR$ ${cliente.toFixed(2)}.`);
+}else{
+    window.alert(`O valor de R$ ${total.toFixed(2)} a ser pago por R$ ${pessoas} pessoa  é de: \nR$ ${cliente.toFixed(2)}.`);
+}
+
+</script>

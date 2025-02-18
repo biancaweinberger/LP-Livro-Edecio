@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+//Elaborar um programa que leia um número. Calcule e informe os seus vizinhos, ou seja, o número anterior ou posterior.
+
+// Número: 15; Vizinhos: 14 e 16 
+
+var num = Number(window.prompt('Digite um número: '));
+
+//var viz = Number(window.prompt('Número de seus vizinhos: '));
+ //window.alert(`Número: ${num}\nVizinhos: ${vizant} e ${vizpost}`);
+ var vizant = num - 1;
+ var vizpost = num + 1;
+ if (num == 0){
+    window.alert(`Número não possui antecessor!\nVizinho: ${vizpost} `);
+ } else{
+    window.alert(`Número: ${num}\nVizinhos: ${vizant} e ${vizpost}`);
+ }
+
+//else{ window.alert(`Vizinho: ${vizant}`)}
+</script>

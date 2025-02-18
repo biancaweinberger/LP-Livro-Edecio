@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script> 
+//Elabore um programa que leia o valor de um jantar. Calcule e informe o valor da taxa do garçom (10%) e o valor total a ser pago.
+var jantar = Number(window.prompt('Valor do Jantar R$: '));
+var garcom = jantar * 0.10;
+var total = jantar + garcom; 
+//var total = jantar + (jantar * 0.10); pode usar desta forma para calcular a porcentagem
+//var total = jantar * 1.10;
+window.alert('Taxa Garçom R$: ' + garcom.toFixed(2) + '\nTotal R$: ' + total.toFixed(2));
+
+</script>

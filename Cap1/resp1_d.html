@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+//Elaborar um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informe a média das notas.
+// 1 nota: 7.0/2 nota: 8.0/média 7.5
+var nota1 = Number(window.prompt('Digite a sua 1º nota: '));
+var nota2 = Number(window.prompt('Digite a sua 2º nota: '));
+var media = (nota1 + nota2)/2
+if(media >= 5){
+    window.alert(`Parabéns! A sua média foi ${media.toFixed(1)}.`)
+}else if(media < 5) {
+    window.alert(`Infelizmente não conseguiu atingir a média. Sua pontuação foi ${media.toFixed(1)}.`);
+}
+</script>

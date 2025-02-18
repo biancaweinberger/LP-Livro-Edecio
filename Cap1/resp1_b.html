@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+//Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+// preço: 60.00/à vista: 54.00/ou 3x de: 20.00
+var produto = Number(window.prompt('Digite o valor do produto R$: '));
+var metodo = window.prompt('Digite a sua forma de pagamento. À vista ou parcelado:  ')
+var produvista = produto - (produto * 0.10);
+var produparce = produto/3;
+if (metodo == 'à vista' || metodo == 'a vista' || metodo == 'À vista'){
+    window.alert(`O valor do seu produto com desconto à vista fica: R$ ${produvista.toFixed(2)}`);
+} else{
+    window.alert(`O valor do seu produto parcelado em 3X sem juros fica: R$ ${produparce.toFixed(2)}`);
+}
+</script>
