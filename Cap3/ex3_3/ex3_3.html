@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições do switch...case</title>
+</head>
+<body>
+    <script>
+        var bairro = window.prompt('Bairro de Entrega: ');
+        var taxaEntrega;
+        switch (bairro) {
+            case 'Centro': 
+            taxaEntrega = 5.00;
+            break;
+            case 'Fragata': 
+            case 'Três Vendas': 
+            taxaEntrega = 7.00; 
+            break;
+            case 'Laranjal':
+            taxaEntrega = 10.00;
+            break;
+            default:
+            taxaEntrega = 8.00;
+        }
+        window.alert('Taxa R$: ' + taxaEntrega);
+    </script>
+</body>
+</html>
