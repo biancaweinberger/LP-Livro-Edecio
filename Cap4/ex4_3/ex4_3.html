@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamento do laço do...while</title>
+</head>
+<body>
+    <script>
+ //solicita o número e repete a leitura enquanto inválido
+        do{
+            var num = Number(window.prompt("Número: "));
+            if (num == 0 || isNaN(num)){
+                window.alert("Digite um número válido...");
+            }
+        } while (num == 0 || isNaN(num));
+ //declara e inicializa variável que irá exibir pares 
+        var pares = "Pares entre 1 e " + num + ": ";
+ //isola o primeiro par (para evitar última vírgula)
+        if (num > 1){
+            pares = pares + "2";
+        }
+// laço para acumular pares (inicia em 4, pois o 2 já foi atribuído)
+        for (var i = 4; i <= num; i = i + 2){
+            pares = pares + ", " + i;
+        }
+// exibe listas dos números pares
+        window.alert(pares);
+    
+    
+    </script>
+    
+</body>
+</html>
